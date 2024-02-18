@@ -1,0 +1,23 @@
+main {
+    max-width: 80em;
+    margin: 0 auto;
+    padding: 3em 1.5em;
+}
+
+main h2 {
+    font-size: 1.6em;
+    color: var(--azul);
+}
+
+main p, main ul li {
+    text-align: justify;
+    word-break: break-word;
+}
+
+main a {
+    color: var(--negro);
+}
+
+main ul {
+    margin-left: 1.7em;
+}

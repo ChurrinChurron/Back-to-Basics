@@ -1,0 +1,348 @@
+main {
+    padding: 3em 1.5em;
+}
+
+.casos__frase {
+    margin-left: 5em;
+    text-align: right;
+    font-weight: 300;
+    font-size: 1.1em;
+    color: var(--azul);
+}
+
+.casos__busqueda {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.casos__busqueda form {
+    position: relative;
+}
+
+.casos__busqueda input {
+    outline: none;
+    border: none;
+    padding: .6em 2em .6em 3em;
+    border-radius: 3em 0 3em 3em;
+    font-family: var(--poppins);
+    background: var(--azul-gris);
+    color: var(--azul);
+}
+
+.casos__busqueda input::placeholder {
+    color: var(--azul);
+}
+
+.casos__busqueda form img {
+    position: absolute;
+    top: .5em;
+    left: .8em;
+    width: 1.2em;
+}
+
+.artic__principal {
+    position: relative;
+    margin: 1em auto 3em auto;
+    background: url(../../assets/Casos/casos.webp) no-repeat center center;
+    background-size: cover;
+    border-radius: 1.5em;
+    padding: 1.5em;
+}
+
+.artic__principal::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5em;
+    background: linear-gradient(180deg, rgba(30, 125, 188, 0.26) 0%, #1E7DBC 100%);
+}
+
+.artic__principal #articNuevo {
+    position: relative;
+    z-index: 2;
+    font-weight: 300;
+    display: inline-block;
+    padding: .3em .8em;
+    border-radius: 1em 0 1em 1em;
+    background: var(--azul);
+    color: var(--blanco);
+}
+
+.artic__texto {
+    margin-top: 9em;
+    position: relative;
+    z-index: 2;
+}
+
+.artic__texto h3 {
+    font-size: 1.3em;
+    text-shadow: 1px 2px 8px var(--negro);
+    color: var(--blanco);
+}
+
+.artic__texto p {
+    margin-top: .6em;
+    font-size: .9em;
+    color: var(--negro);
+}
+
+.casos__articulos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    justify-items: center;
+    gap: 2em;
+}
+
+.artic__conten {
+    width: 100%;
+    max-width: 25em;
+    border-radius: 2em;
+    background: var(--blanco);
+    box-shadow: 0 0 6px 1px var(--gris);
+    transition: .5s;
+}
+
+.artic__conten img {
+    border-radius: 2em 2em 2em 0;
+}
+
+.artic__conten:last-child {
+    margin-bottom: 0;
+}
+
+.artic__conten h3 {
+    padding: .5em 1em .5em 1em;
+    color: var(--azul);
+}
+
+.artic__conten > p {
+    padding: .2em 1em 1em 1em;
+    font-size: .9em;
+    color: var(--negro);
+}
+
+.artic__datos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.datos__conten {
+    position: relative;
+    display: flex;
+    color: var(--negro);
+    font-size: .9em;
+    transition: .5s;
+}
+
+.datos__conten img {
+    width: 1.5em;
+    margin-right: .5em;
+}
+
+.datos__conten p {
+    color: var(--azul);
+}
+
+.artic__conten a {
+    display: block;
+    width: 7em;
+    margin: 1em auto;
+    padding: .3em 1em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3em 0 3em 3em;
+    font-size: 1.1em;
+    font-weight: 400;
+    background: var(--azul-gris);
+    color: var(--azul);
+    font-family: var(--averia);
+    transition: .5s;
+}
+
+.artic__paginas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 4em;
+}
+
+.artic__paginas span {
+    padding: .4em 1em;
+    border-radius: 1em 0 1em 1em;
+    color: var(--azul);
+    background: var(--azul-gris);
+    cursor: pointer;
+}
+
+.artic__paginas #pagActual {
+    color: var(--blanco);
+    background: var(--azul);
+}
+
+@media screen and (width>= 768px) {
+    
+    .casos__articulos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (width >=1024px) {
+
+    .main {
+        padding: 4em 6em;
+    }
+
+    .casos__frase {
+        margin: 0 0 0 auto;
+        width: 22em;
+        font-size: 1.6em;
+    }
+
+    .casos__busqueda input {
+        width: 25em;
+    }
+
+    .artic__principal {
+        max-width: 67em;
+    }
+
+    .artic__texto {
+        padding-left: 2em;
+    }
+
+    .artic__texto h3 {
+        width: 12em;
+    }
+
+    .artic__texto p {
+        width: 30em;
+    }
+
+    .casos__articulos {
+        max-width: 70em;
+        margin: 0 auto;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 28em 28em;
+    }
+
+    .casos__articulos .artic__conten {
+        margin-bottom: 0;
+    }
+
+    .artic__conten {
+        width: 18em;
+        height: 22em;
+        margin-bottom: 7em;
+        border-radius: 2em;
+        background: var(--blanco);
+        transition: .5s;
+    }
+
+    .artic__conten img {
+        border-radius: 2em 2em 2em 0;
+    }
+
+    .artic__conten:last-child {
+        margin-bottom: 0;
+    }
+
+    .artic__conten h3 {
+        padding: .5em 1em .5em 1em;
+        color: var(--azul);
+    }
+
+    .artic__conten > p {
+        padding: .2em 1em 1em 1em;
+        font-size: .9em;
+        color: var(--negro);
+    }
+
+    .artic__datos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1em;
+    }
+
+    .datos__conten {
+        position: relative;
+        display: flex;
+        color: var(--negro);
+        font-size: .9em;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .datos__conten img {
+        width: 1.5em;
+        margin-right: .5em;
+    }
+
+    .datos__conten p {
+        color: var(--azul);
+    }
+
+    .artic__conten a {
+        display: block;
+        position: relative;
+        top: -3em;
+        opacity: 0;
+        visibility: hidden;
+        width: 7em;
+        margin: 1em auto;
+        padding: .3em 1em;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 3em 0 3em 3em;
+        font-size: 1.1em;
+        font-weight: 400;
+        background: var(--azul-gris);
+        color: var(--azul);
+        font-family: var(--averia);
+        transition: .5s;
+    }
+
+    .datos__conten:first-child {
+        left: 30%;
+    }
+
+    .datos__conten:last-child {
+        right: 30%;
+    }
+
+    .artic__conten:hover {
+        height: 27em;
+    }
+
+    .artic__conten:hover .datos__conten {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .artic__conten:hover .datos__conten:first-child {
+        left: 0;
+    }
+
+    .artic__conten:hover .datos__conten:last-child {
+        right: 0;
+    }
+
+    .artic__conten:hover a {
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+}
