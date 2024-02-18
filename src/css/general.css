@@ -417,6 +417,10 @@ footer hr {
 
     /* ----FOOTER---- */
 
+    footer {
+        background: url(../../assets/fondo-footer.svg) no-repeat 100% 100% / 28em, var(--azul-gradient);
+    }
+
     .footer__conten {
         flex-direction: row;
         align-items: baseline;
