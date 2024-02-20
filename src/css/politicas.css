@@ -40,6 +40,13 @@ main ul {
     margin-left: 1.7em;
 }
 
+/* ----FOOTER---- */
+
+footer {
+    bottom: 4.5em;
+}
+
+
 @media screen and (width >= 1024px) {
     
     main {
