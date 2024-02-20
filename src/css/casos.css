@@ -209,6 +209,12 @@ main::after {
     background: var(--azul);
 }
 
+/* ----FOOTER---- */
+
+footer {
+    bottom: 4.5em;
+}
+
 @media screen and (width>= 768px) {
     
     .casos__articulos {
