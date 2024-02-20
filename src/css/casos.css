@@ -1,5 +1,24 @@
+body {
+    background: var(--negro);
+}
+
 main {
-    padding: 3em 1.5em;
+    position: relative;
+    bottom: 4.5em;
+    padding: 6em 1.5em;
+    border-radius: 6em 0 0 0;
+    background: var(--blanco);
+}
+
+main::after {
+    content: "";
+    background: url(../../assets/borde-main-blanco.png) no-repeat bottom right / cover;
+    position: absolute;
+    display: inline-block;
+    top: -6.6em;
+    right: 0;
+    width: 7em;
+    height: 7em;
 }
 
 .casos__frase {
@@ -199,8 +218,8 @@ main {
 
 @media screen and (width >=1024px) {
 
-    .main {
-        padding: 4em 6em;
+    main {
+        padding: 5em 8em;
     }
 
     .casos__frase {

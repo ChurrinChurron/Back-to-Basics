@@ -9,6 +9,7 @@
 :root {
     /* Colores */
     --blanco: #fff;
+    --blanco-gris: #d3e0e9;
     --azul-gris: #CBD7E3;
     --azul-gradient: linear-gradient(180deg, #1E7DBC 0%, #000000 100%);
     --blanco-gradient: linear-gradient(180deg, #ffffff 60%, rgb(219, 228, 238) 30%);
@@ -36,6 +37,7 @@ body {
 
 .whatsapp {
     position: fixed;
+    z-index: 2;
     bottom: 2em;
     right: 2.1em;
 }
@@ -183,8 +185,7 @@ nav {
 
 .header__titulo {
     background: url(../../assets/fondo-header.webp) no-repeat center center / cover;
-    padding: 8em 3em 4em 3em;
-    border-radius: 0 0 4em 0;
+    padding: 8em 3em 8em 3em;
 }
 
 .header__titulo h1 {
@@ -203,8 +204,10 @@ main img {
 /* ----FOOTER---- */
 
 footer {
+    position: relative;
+    bottom: 5em;
     padding: 7em 3em 3em 3em;
-    border-radius: 7em 0 0 0;
+    border-radius: 11em 0 0 0;
     background: url(../../assets/fondo-footer.svg) no-repeat 100% 115% / 15em, var(--azul-gradient);
 }
 
@@ -405,7 +408,7 @@ footer hr {
 
     .header__titulo {
         background: url(../../assets/fondo-header.webp) no-repeat center center / cover;
-        padding: 11em 3em 4em 15%;
+        padding: 11em 3em 12em 15%;
         border-radius: 0 0 6em 0;
     }
 
